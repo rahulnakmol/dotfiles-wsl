@@ -10,6 +10,8 @@ alias sai='sudo apt install -y'
 alias sar='sudo apt remove -y'
 alias sac='sudo apt clean'
 alias saa='sudo apt autoremove'
+alias sas='apt search'
+alias sash='apt show'
 
 # Aliases for homebrew
 alias bi='brew install'
@@ -18,6 +20,8 @@ alias bl='brew list'
 alias bup='brew update'
 alias bug='brew upgrade'
 alias buu='brew update && brew upgrade'
+alias bs='brew search'
+alias bss='brew info'
 
 # Aliases for git
 alias gs='git status'
