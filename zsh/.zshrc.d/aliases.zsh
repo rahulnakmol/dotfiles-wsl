@@ -14,11 +14,22 @@ alias .prj='cd $HOME/Developer/Projects'
 alias .dotfiles='cd $HOME/.dotfiles'
 
 # Aliases for ls
-alias ls='eza -l --color=auto'
-alias l='ls -CF --color=auto'
-alias ll='ls -alF --color=auto'
-alias la='ls -A --color=auto'
-alias lar='ls -laRt changed'
+alias ls='eza -l --icons=always --color=auto'
+alias l='eza -AGx --icons=always --color=auto'
+alias ll='ls -alF --icons=always --color=auto'
+alias la='ls -A ---icons=always -color=auto'
+alias lar='ls -laRt changed --icons=always'
+
+# Aliases for homebrew
+alias bi='brew install'
+alias bu='brew uninstall'
+alias bl='brew list'
+alias bs='brew search'
+alias bc='brew cleanup'
+alias bup='brew update'
+alias bug='brew upgrade'
+alias buu='brew update && brew upgrade && brew cleanup'
+alias binf='brew info'
 
 # Aliases for git
 alias gs='git status'

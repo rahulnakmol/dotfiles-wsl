@@ -10,4 +10,14 @@
 # here, since multilingual X sessions would not work properly if LANG is over-
 # ridden in every subshell.
 
-test -s ~/.alias && . ~/.alias || true
+# Load aliases and functions from separate files
+if [ -d ~/.bashrc.d ]; then
+  for rc in ~/.bashrc.d/*; do
+    if [ -f "$rc" ]; then
+      source "$rc"
+    fi
+  done
+fi
+unset rc
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
